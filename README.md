@@ -1,2 +1,2 @@
 # dotfiles 
-My dotfiles structured like ```shell $home```!!
+My dotfiles structured like ```$home```!!
