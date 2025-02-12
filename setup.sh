@@ -12,5 +12,5 @@ sudo dnf remove kontact dolphin kwrite akregator ark dragon elisa-player filelig
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf copr enable g3tchoo/prismlauncher
 sudo dnf update && sudo dnf upgrade
-sudo dnf install git clang vim-enhanced vlc cmake nodejs R fastfetch wl-clipboard tmux haskell-platform zathura discord prismlauncher texlive-scheme-full
+sudo dnf install git clang vim-enhanced vlc cmake nodejs R fastfetch wl-clipboard tmux haskell-platform zathura discord prismlauncher texlive-scheme-full feh
 

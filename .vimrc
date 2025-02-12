@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'jasonccox/vim-wayland-clipboard'
 Plug 'SirVer/ultisnips'
+Plug 'lervag/vimtex'
 call plug#end()
 syntax on
 colorscheme retrobox
