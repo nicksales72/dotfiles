@@ -15,6 +15,7 @@ set ai
 set relativenumber
 set hlsearch
 set ruler
+let g:vimtex_view_method = 'zathura'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
