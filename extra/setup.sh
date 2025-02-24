@@ -11,5 +11,5 @@ git config --global pull.rebase false
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf copr enable g3tchoo/prismlauncher
 sudo dnf update && sudo dnf upgrade
-sudo dnf install git clang neovim vlc cmake nodejs R fastfetch wl-clipboard tmux haskell-platform zathura zathura-pdf-mupdf discord prismlauncher texlive-scheme-full unrar gnome-shell-extension-pop-shell xprop
+sudo dnf install git clang neovim vlc cmake nodejs R fastfetch wl-clipboard tmux haskell-platform zathura zathura-pdf-mupdf discord prismlauncher texlive-scheme-full unrar gnome-shell-extension-pop-shell xprop fuse-libs
 
