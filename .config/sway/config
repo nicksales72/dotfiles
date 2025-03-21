@@ -6,6 +6,7 @@ default_orientation horizontal
 # External Executables
 exec dex --autostart --environment sway
 exec swayidle -w \
+     timeout 270 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
      timeout 300 'swaylock -f -c 000000' \
      timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
      before-sleep 'swaylock -f -c 000000'
@@ -61,6 +62,16 @@ output * bg #000000 solid_color
 input * {
     accel_profile flat
     pointer_accel 0
+}
+
+# Touchpad 
+input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
+   dwt enabled
+   tap disabled
+   natural_scroll enabled
+   scroll_factor 0.2
+   clickfinger_button_map lrm
+   middle_emulation enabled
 }
 
 bar {
