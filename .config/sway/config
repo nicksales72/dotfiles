@@ -95,11 +95,12 @@ bar {
 }
 
 # External Executables
-exec_always --no-startup-id swayidle \
-  timeout 270 'brightnessctl set 10%' 'brightnessctl set 100%' \
-  timeout 300 'swaylock -f' \
-  timeout 350 'systemctl suspend' \
-  before-sleep 'swaylock -f'
+exec swayidle -w \
+    timeout 270 '~/.config/sway/dim-brightness.sh dim' \
+    resume '~/.config/sway/dim-brightness.sh restore' \
+    timeout 300 'swaylock -f' \
+    timeout 350 'systemctl suspend' \
+    before-sleep 'swaylock -f'
 exec dex --autostart --environment sway
 exec sway-audio-idle-inhibit
 exec nm-applet --indicator
