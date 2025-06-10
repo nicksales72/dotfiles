@@ -73,7 +73,7 @@ output "HDMI-A-1" {
 
 output "eDP-1" {
   bg /home/nick/Pictures/1.jpg fill
-  pos 0 0
+  pos 0 1080
 }
 
 mode "resize" {
