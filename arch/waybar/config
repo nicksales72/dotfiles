@@ -1,0 +1,46 @@
+[
+  {
+    "battery": {
+      "format": "| BAT: {capacity}%",
+      "interval": 30
+    },
+    "clock": {
+      "format": "| {:%Y-%m-%d %I:%M %p}",
+      "interval": 1
+    },
+    "height": 30,
+    "layer": "top",
+    "memory": {
+      "format": "| MEM: {used}/{total}",
+      "interval": 10
+    },
+    "modules-center": [],
+    "modules-left": [
+      "sway/workspaces",
+      "sway/mode"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "network",
+      "memory",
+      "temperature",
+      "battery",
+      "clock"
+    ],
+    "network": {
+      "format-disconnected": "Disconnected",
+      "format-wifi": "| W: (ESSID: {essid}, Bit Rate: {signalStrength}%, Signal: {signalStrength}%)",
+      "interval": 5
+    },
+    "position": "bottom",
+    "pulseaudio": {
+      "format": "VOL: {volume}%",
+      "format-muted": "MUTED",
+      "interval": 1
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format": "| TEMP: {temperatureC}°C {icon}"
+    }
+  }
+]

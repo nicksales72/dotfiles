@@ -1,0 +1,5 @@
+background = 181818
+cursor-style = block
+cursor-style-blink = false
+font-size = 9
+shell-integration-features = no-cursor
