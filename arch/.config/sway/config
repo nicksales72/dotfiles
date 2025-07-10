@@ -26,7 +26,7 @@ bindsym Mod4+Shift+minus move scratchpad
 bindsym Mod4+Shift+q kill
 bindsym Mod4+Shift+r restart
 bindsym Mod4+Shift+s exec grim -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png
-bindsym Mod4+b exec firefox
+bindsym Mod4+b exec brave
 bindsym Mod4+t exec ghostty
 bindsym Mod4+d exec rofi -show drun
 bindsym Mod4+f fullscreen toggle
@@ -100,4 +100,5 @@ exec swayidle -w \
   before-sleep 'swaylock -f'
 exec dex --autostart --environment sway
 exec wayland-pipewire-idle-inhibit
+exec sway-audio-idle-inhibit
 exec nm-applet --indicator
