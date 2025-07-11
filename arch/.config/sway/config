@@ -98,7 +98,6 @@ exec swayidle -w \
   timeout 300 'swaylock -f' \
   timeout 350 'systemctl suspend' \
   before-sleep 'swaylock -f'
+exec idlehack	
 exec dex --autostart --environment sway
-exec wayland-pipewire-idle-inhibit
-exec sway-audio-idle-inhibit
 exec nm-applet --indicator
