@@ -72,7 +72,7 @@ output "HDMI-A-1" {
 
 output "eDP-1" {
   bg /home/nick/Pictures/1.jpg fill
-  pos 0 1080
+  pos 0 0
 }
 
 mode "resize" {
@@ -93,11 +93,5 @@ bar {
   swaybar_command waybar
 }
 
-exec swayidle -w \
-  timeout 270 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
-  timeout 300 'swaylock -f' \
-  timeout 350 'systemctl suspend' \
-  before-sleep 'swaylock -f'
-exec idlehack	
 exec dex --autostart --environment sway
 exec nm-applet --indicator
