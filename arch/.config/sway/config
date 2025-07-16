@@ -93,5 +93,10 @@ bar {
   swaybar_command waybar
 }
 
+exec swayidle -w \
+  timeout 1770 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
+  timeout 1800 'swaylock -f' \
+  timeout 1830 'systemctl suspend' \
+  before-sleep 'swaylock -f'		
 exec dex --autostart --environment sway
 exec nm-applet --indicator
