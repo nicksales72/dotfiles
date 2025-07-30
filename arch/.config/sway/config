@@ -47,7 +47,7 @@ input "*" {
   pointer_accel 0
 }
 
-input "9494:321:Cooler_Master_Technology_Inc._MM720_Gaming_Mouse" {
+input "9390:6256:Rapoo_Rapoo_Gaming_Device" {
   pointer_accel -0.5
 }
 
