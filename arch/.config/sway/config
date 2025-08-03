@@ -97,3 +97,4 @@ exec swayidle -w \
   before-sleep 'swaylock -f'		
 exec dex --autostart --environment sway
 exec nm-applet --indicator
+exec otd-daemon
