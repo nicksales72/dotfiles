@@ -3,5 +3,5 @@ cursor-style = block
 cursor-style-blink = false
 font-size = 9
 shell-integration-features = no-cursor
-command = /usr/bin/nu --login --interactive
+command = /usr/bin/fish --login --interactive
 
