@@ -16,8 +16,8 @@
     },
     "modules-center": [],
     "modules-left": [
-      "sway/workspaces",
-      "sway/mode"
+      "hyprland/workspaces",
+      "hyprland/submap"
     ],
     "modules-right": [
       "pulseaudio",
@@ -29,7 +29,7 @@
     ],
     "network": {
       "format-disconnected": "Disconnected",
-      "format-wifi": "| W: (ESSID: {essid}, Bit Rate: {signalStrength}%, Signal: {signalStrength}%)",
+      "format-wifi": "| W: {essid}",
       "interval": 5
     },
     "position": "bottom",
@@ -41,6 +41,22 @@
     "temperature": {
       "critical-threshold": 80,
       "format": "| TEMP: {temperatureC}°C {icon}"
-    }
+    },
+
+    "hyprland/workspaces": {
+      "format": "{icon} {name}",
+      "on-click": "hyprctl dispatch workspace {id}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
+      }
+    },
+
   }
 ]
+
