@@ -1,12 +1,21 @@
+[brave-browser.desktop][Global Shortcuts]
+_launch=Meta+B
+new-private-window=
+new-window=
+
+[com.mitchellh.ghostty.desktop][Global Shortcuts]
+_launch=Meta+T
+new-window=
+
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=
 Cycle Overview=
 Cycle Overview Opposite=
 Decrease Opacity=
 Edit Tiles=
-Expose=Ctrl+F9
-ExposeAll=Ctrl+F10; Launch (C)
-ExposeClass=Ctrl+F7
+Expose=
+ExposeAll=
+ExposeClass=
 ExposeClassCurrentDesktop=
 Grid View=
 Increase Opacity=
@@ -107,12 +116,12 @@ Window Pack Down=
 Window Pack Left=
 Window Pack Right=
 Window Pack Up=
-Window Quick Tile Bottom=Ctrl+Shift+J
+Window Quick Tile Bottom=Meta+Shift+J
 Window Quick Tile Bottom Left=
 Window Quick Tile Bottom Right=
 Window Quick Tile Left=Meta+Shift+H
 Window Quick Tile Right=Meta+Shift+L
-Window Quick Tile Top=Ctrl+Shift+K
+Window Quick Tile Top=Meta+Shift+K
 Window Quick Tile Top Left=
 Window Quick Tile Top Right=
 Window Raise=
