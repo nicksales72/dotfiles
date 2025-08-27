@@ -1,0 +1,11 @@
+[Unit]
+Description=DNS Watcher to set Pi-hole DNS on Home Wi-Fi
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/dns-watcher.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
