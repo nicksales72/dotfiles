@@ -1,4 +1,3 @@
 if status is-interactive
-    alias vim "nvim"
-    alias vi "nvim" 
+    alias vi "vim" 
 end
