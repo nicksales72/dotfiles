@@ -1,7 +1,7 @@
 require("config.lazy")
 vim.lsp.enable('pyright')
 
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("gruvbox")
 vim.wo.relativenumber = true
 vim.opt.clipboard = "unnamedplus"   
 vim.opt.spell = true
