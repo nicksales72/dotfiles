@@ -1,0 +1,65 @@
+snippet template "Article Template" b
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz-cd}
+\usepackage{textcomp, gensymb}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{geometry}
+\usetikzlibrary{positioning}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ima}{im}
+\geometry{margin=1in}
+\hfuzz=55pt
+
+\title{Ring Theory Exercises}
+\author{Nicholas Sales}
+\date{}
+
+\begin{document}
+
+\tableofcontents
+\maketitle
+\newpage
+
+$0
+\end{document}
+endsnippet
+
+snippet beg "begin{} / end{}" bA
+\begin{$1}
+	$0
+\end{$1}
+endsnippet
+
+snippet dm "Math" wA
+\[
+    $1
+.\] $0
+endsnippet
+
+snippet // "Fraction" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+snippet mbb "Mathbb" iA
+\\mathbb{$1}$0
+endsnippet
+
+snippet func "Function" iA
+$1 : $2 \to $3
+endsnippet
+
+snippet bar "bar" i
+\overline{$1}$0
+endsnippet
+
+snippet hat "hat" i
+\hat{$1}$0
+endsnippet

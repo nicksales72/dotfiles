@@ -8,6 +8,9 @@ return {
         pair = "$$",
         enabled_filetypes = { "tex" },
       },
+      ["'"] = {
+        disabled_filetypes = { "tex" },
+      },
     },
   },
 }
