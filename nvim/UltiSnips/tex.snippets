@@ -2,7 +2,7 @@ snippet template "Article Template" b
 \documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, amsthm}
 \usepackage{tikz-cd}
 \usepackage{textcomp, gensymb}
 \usepackage{parskip}
@@ -54,6 +54,10 @@ endsnippet
 
 snippet crr "Cross" iA
 $1 \times $2$0
+endsnippet
+
+snippet brr "Bracket" iA
+\langle $1 \rangle$0
 endsnippet
 
 snippet func "Function" iA

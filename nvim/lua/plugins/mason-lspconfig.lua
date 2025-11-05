@@ -13,6 +13,7 @@ return {
                 "pyright",
                 "rust_analyzer",
                 "hls",
+                "jdtls",
           },
     }
   end,
