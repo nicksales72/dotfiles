@@ -1,6 +1,7 @@
-background = 101010
+background = 1f2329
 cursor-style = block
 cursor-style-blink = false
 font-size = 12
 shell-integration-features = no-cursor
 command = /usr/bin/fish --login --interactive
+
