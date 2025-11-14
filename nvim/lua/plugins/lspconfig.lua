@@ -21,7 +21,7 @@ return {
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
     end
 
-    local servers = { 'lua_ls', 'pyright', 'clangd', 'rust_analyzer', 'hls' }
+    local servers = { 'lua_ls', 'pyright', 'clangd', 'rust_analyzer' }
 
     for _, server in ipairs(servers) do
       vim.lsp.config(server, {

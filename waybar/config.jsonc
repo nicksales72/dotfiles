@@ -1,0 +1,50 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 30,
+
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": [],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "custom/cpu_gpu_temp",
+    "memory",
+    "temperature",
+    "battery",
+    "clock"
+  ],
+
+  "pulseaudio": {
+    "format": "VOL: {volume}%",
+    "format-muted": "MUTED",
+    "interval": 1
+  },
+
+  "battery": {
+    "format": "| BAT: {capacity}%",
+    "interval": 30
+  },
+
+  "network": {
+    "format-wifi": "| WIFI: {essid}",
+    "format-disconnected": "Disconnected",
+    "interval": 5
+  },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "| TEMP: {temperatureC}°C {icon}"
+  },
+
+  "memory": {
+    "format": "| MEM: {used}/{total}",
+    "interval": 10
+  },
+
+  "clock": {
+    "format": "| {:%Y-%m-%d %H:%M:%S}",
+    "interval": 1
+  }
+}
+

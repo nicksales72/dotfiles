@@ -1,0 +1,76 @@
+set $mod Mod4
+font monospace 8
+
+set $term ghostty
+
+floating_modifier $mod
+
+output HDMI-A-1 mode 2560x1440@143.999Hz
+output HDMI-A-1 pos 1920 0
+
+output eDP-1 pos 0 0
+
+output * bg #000000 solid_color
+
+input * {
+    accel_profile flat
+    pointer_accel 0
+}
+
+input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
+    dwt enabled
+    tap disabled
+    natural_scroll enabled
+    scroll_factor 0.2
+    clickfinger_button_map lrm
+    middle_emulation enabled
+}
+
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute        exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioMicMute     exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+bindsym XF86MonBrightnessUp   exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png
+
+bindsym $mod+t exec ghostty
+bindsym $mod+b exec brave-browser
+bindsym $mod+d exec rofi -show drun
+
+bindsym $mod+q kill
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+equal floating toggle
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+
+bar {
+    swaybar_command waybar
+}
+
+exec dex --autostart --environment sway
+exec sway-audio-idle-inhibit
+exec nm-applet --indicator
+
+exec swayidle \
+    timeout 270 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
+    timeout 300 'swaylock -f' \
+    timeout 350 'systemctl suspend' \
+    before-sleep 'swaylock -f'
+
