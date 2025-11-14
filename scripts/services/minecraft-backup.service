@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily folder backup
+
+[Service]
+Type=oneshot
+ExecStart=/home/npi5/backup-script/minecraft-backup.sh
+
