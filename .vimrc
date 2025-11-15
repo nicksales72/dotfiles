@@ -7,8 +7,8 @@ call plug#end()
 
 syntax on
 colorscheme zaibatsu
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set ai
 set relativenumber
