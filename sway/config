@@ -17,6 +17,10 @@ input * {
     pointer_accel 0
 }
 
+input "9390:6256:Rapoo_Rapoo_Gaming_Device" {
+        pointer_accel -0.5
+    }
+
 input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
     dwt enabled
     tap disabled
