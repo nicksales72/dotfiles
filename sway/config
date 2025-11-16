@@ -73,8 +73,8 @@ exec sway-audio-idle-inhibit
 exec nm-applet --indicator
 
 exec swayidle \
-    timeout 270 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
-    timeout 300 'swaylock -f' \
-    timeout 350 'systemctl suspend' \
+    timeout 1700 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
+    timeout 1750 'swaylock -f' \
+    timeout 1800 'systemctl suspend' \
     before-sleep 'swaylock -f'
 
