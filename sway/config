@@ -23,11 +23,13 @@ input "9390:6256:Rapoo_Rapoo_Gaming_Device" {
 
 input "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" {
     dwt enabled
-    tap disabled
-    natural_scroll enabled
-    scroll_factor 0.2
-    clickfinger_button_map lrm
+    tap enabled
     middle_emulation enabled
+    natural_scroll enabled
+    scroll_factor 0.1
+    click_method clickfinger
+    tap_button_map lrm
+    clickfinger_button_map lrm
 }
 
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
@@ -68,10 +70,11 @@ bar {
     swaybar_command waybar
 }
 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
 exec dex --autostart --environment sway
 exec sway-audio-idle-inhibit
 exec nm-applet --indicator
-
 exec swayidle \
     timeout 1700 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
     timeout 1750 'swaylock -f' \
