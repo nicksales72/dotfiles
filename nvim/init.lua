@@ -1,7 +1,6 @@
 require("config.lazy")
 vim.lsp.enable('pyright')
 
-vim.cmd("colorscheme kanagawa-paper")
 vim.wo.relativenumber = true
 vim.opt.clipboard = "unnamedplus"   
 vim.opt.spell = true
