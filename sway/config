@@ -10,7 +10,7 @@ output HDMI-A-1 pos 1920 0
 
 output eDP-1 pos 0 0
 
-output * bg #000000 solid_color
+output * bg /usr/share/backgrounds/default-dark.jxl fill
 
 input * {
     accel_profile flat
