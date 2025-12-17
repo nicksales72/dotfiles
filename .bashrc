@@ -24,3 +24,4 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+alias suu="sudo dnf update && sudo dnf upgrade"
