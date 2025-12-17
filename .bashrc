@@ -24,5 +24,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-alias vim="nvim"
-alias vi="nvim"
