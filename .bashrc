@@ -25,3 +25,5 @@ fi
 unset rc
 
 alias suu="sudo dnf update && sudo dnf upgrade"
+alias vim="nvim"
+alias vi="nvim"
