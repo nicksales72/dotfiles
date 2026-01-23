@@ -25,7 +25,8 @@ fi
 unset rc
 
 alias suu="sudo dnf update && sudo dnf upgrade"
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 
 export CUDA_HOME=/usr/local/cuda
 export PATH=${CUDA_HOME}/bin:${PATH}
