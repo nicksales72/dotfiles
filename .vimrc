@@ -1,11 +1,24 @@
+call plug#begin() 
+
+Plug 'AlessandroYorba/Sierra'
+
+call plug#end()
+
 syntax on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set ai
 set number
 set hlsearch
 set ruler
 set relativenumber
-highlight Comment ctermfg=lightblue guifg=#ADD8E6
+colorscheme sierra 
+hi Normal guibg=NONE ctermbg=NONE
 
+" Auto-close brackets and quotes
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
