@@ -1,5 +1,6 @@
 alias suu="sudo apt update && sudo apt upgrade"
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 alias cat="batcat"
 alias ll='ls -alF'
 alias la='ls -A'
