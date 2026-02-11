@@ -88,7 +88,7 @@ exec dex --autostart --environment sway
 exec sway-audio-idle-inhibit
 exec nm-applet --indicator
 exec swayidle \
-    timeout 1700 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
+    timeout 1700 'brightnessctl -s set 10%' resume 'brightnessctl -r' \
     timeout 1750 'swaylock -f' \
     timeout 1800 'systemctl suspend' \
     before-sleep 'swaylock -f'
