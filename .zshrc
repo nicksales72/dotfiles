@@ -1,7 +1,7 @@
-alias suu="sudo dnf update && sudo dnf upgrade"
-alias vi="nvim"
-alias vim="nvim"
-alias cat="bat"
+alias suu="sudo apt update && sudo apt upgrade"
+alias code="codium"
+alias vi="vim"
+alias cat="batcat"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
