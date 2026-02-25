@@ -1,7 +1,8 @@
-alias suu="sudo apt update && sudo apt upgrade"
+alias suu="sudo pacman -Syu"
 alias code="codium"
-alias vi="vim"
-alias cat="batcat"
+alias vi="nvim"
+alias vim="nvim"
+alias cat="bat"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
