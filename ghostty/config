@@ -1,1 +1,2 @@
+font-size = 13
 command = /usr/bin/zsh --login --interactive
