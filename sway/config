@@ -57,6 +57,7 @@ bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%
 bindsym $mod+t exec ghostty
 bindsym $mod+b exec brave-browser
 bindsym $mod+d exec rofi -show drun
+bindsym $mod+Shift+o exec ~/.local/bin/sway-refresh-output HDMI-A-1
 
 bindsym $mod+w kill
 bindsym $mod+f fullscreen toggle
@@ -91,5 +92,5 @@ exec swayidle \
     timeout 1700 'brightnessctl -s set 10%' resume 'brightnessctl -r' \
     timeout 1750 'swaylock -f' \
     timeout 1800 'systemctl suspend' \
-    before-sleep 'swaylock -f'
-
+    before-sleep 'swaylock -f' \
+    after-resume '~/.local/bin/sway-refresh-output HDMI-A-1'
