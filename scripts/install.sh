@@ -1,3 +1,3 @@
  #!/bin/bash
 
- sudo pacman -S fastfetch tlp htop neovim gnome-keyring ghostty zsh brightnessctl
+ sudo pacman -S fastfetch tlp htop neovim gnome-keyring ghostty zsh brightnessctl discord calibre
