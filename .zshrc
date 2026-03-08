@@ -1,5 +1,4 @@
-alias suu="sudo dnf update && sudo dnf upgrade" 
-alias code="codium"
+alias suu="sudo pacman -Syu" 
 alias vi="nvim"
 alias vim="nvim"
 alias cat="bat"
