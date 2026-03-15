@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 #workspaces button {
@@ -17,11 +17,12 @@ window#waybar {
     color: #FFFFFF;
 }
 
-#pulseaudio, 
-#network, 
-#memory, 
-#temperature, 
-#battery, 
+#pulseaudio,
+#network,
+#custom-cpu_gpu_temp,
+#memory,
+#temperature,
+#battery,
 #clock {
     color: #FFFFFF;
     padding: 0 5px;
@@ -38,3 +39,4 @@ window#waybar {
 #battery.critical {
     color: #FFFFFF;
 }
+
