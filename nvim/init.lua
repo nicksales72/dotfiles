@@ -2,6 +2,7 @@ require("config.lazy")
 vim.lsp.enable('pyright')
 
 vim.cmd("colorscheme catppuccin")
+vim.o.conceallevel = 2
 vim.wo.relativenumber = true
 vim.opt.clipboard = "unnamedplus"   
 vim.opt.spell = true
