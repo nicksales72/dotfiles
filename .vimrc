@@ -1,11 +1,17 @@
 call plug#begin() 
 
-Plug 'AlessandroYorba/Sierra',
+Plug 'AlessandroYorba/Sierra'
 Plug 'lervag/vimtex'
 
 call plug#end()
 
+let g:vimtex_view_method = 'zathura'
+
 syntax on
+colorscheme sierra 
+
+hi Normal guibg=NONE ctermbg=NONE
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -14,8 +20,7 @@ set number
 set hlsearch
 set ruler
 set relativenumber
-colorscheme sierra 
-hi Normal guibg=NONE ctermbg=NONE
+set clipboard=unnamedplus
 
 " Auto-close brackets and quotes
 inoremap ( ()<Left>
