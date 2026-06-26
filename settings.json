@@ -1,0 +1,17 @@
+{
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "editor.lineNumbers": "relative",
+    "vim.useSystemClipboard": true,
+    "editor.inlayHints.enabled": "off",
+    "rust-analyzer.completion.autoimport.enable": false,
+    "rust-analyzer.completion.addColonsToModule": false,
+    "rust-analyzer.completion.addSemicolonToUnit": false,
+    "rust-analyzer.completion.autoAwait.enable": false,
+    "rust-analyzer.completion.autoIter.enable": false,
+    "rust-analyzer.completion.autoself.enable": false,
+    "rust-analyzer.completion.postfix.enable": false,
+    "rust-analyzer.semanticHighlighting.nonStandardTokens": false,
+    "rust-analyzer.semanticHighlighting.comments.enable": false,
+    "rust-analyzer.semanticHighlighting.operator.enable": false,
+    "rust-analyzer.semanticHighlighting.strings.enable": false
+}
