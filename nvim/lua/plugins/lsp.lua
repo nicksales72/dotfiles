@@ -56,6 +56,13 @@ return {
       --   settings = { python = { analysis = { typeCheckingMode = "standard" } } },
       -- })
 
+      vim.lsp.config("clangd", {
+        cmd = {
+          "clangd",
+          "--header-insertion=never",
+        },
+      })
+
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
