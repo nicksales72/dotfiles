@@ -1,6 +1,7 @@
 alias suu="sudo dnf update && sudo dnf upgrade"
 alias vi="nvim"
 alias vim="nvim"
+alias code="codium"
 alias cat="bat"
 alias grep="rg"
 alias ll='ls -alF'
